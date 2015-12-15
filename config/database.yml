@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgreSQL
+  adapter: postgresql
   encoding: unicode
   pool: 5
   timeout: 5000
@@ -24,4 +24,3 @@ test:
 production:
   <<: *default
   database: CodeChallengeTrim-production
-  
