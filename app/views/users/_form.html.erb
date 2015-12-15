@@ -1,3 +1,6 @@
+<div class="container">
+
+
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -11,75 +14,160 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="row field">
+    <div class="col-md-12">
     <%= f.text_field :fullname, :placeholder => 'FULL NAME', :class => 'placeholder' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.text_field :email, :VALUE => 'EMAIL' %>
+
+  <div class="row field">
+    <div class="col-md-12">
+    <%= f.text_field :email, :placeholder => 'EMAIL', :class => 'placeholder' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.text_field :repoURL, :VALUE => 'PROJECT REPO' %>
+
+  <div class="row field">
+    <div class="col-md-12">
+    <%= f.text_field :repoURL, :placeholder => 'PROJECT REPO', :class => 'placeholder' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.text_field :projectURL, :VALUE => 'PROJECT URL' %>
+
+  <div class="row field">
+    <div class="col-md-12">
+      <%= f.text_field :projectURL, :placeholder => 'PROJECT URL', :class => 'placeholder' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :OOP %>
-    <%= f.number_field :OOP %>
+
+  <div class="row field">
+    <div class="col-md-10">
+      USING BEST PRACTICES FOR OOP
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :OOP, :class =>'todd' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :modular %>
-    <%= f.number_field :modular %>
+
+
+  <div class="row field">
+    <div class="col-md-10">
+      MODULAR DEVELOPMENT
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :modular, :class =>'todd' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :stack %>
-    <%= f.number_field :stack %>
+
+  <div class="row field">
+    <div class="col-md-10">
+      FULL STACK WORKFLOW UNDERSTANDING
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :stack, :class =>'todd' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :db %>
-    <%= f.number_field :db %>
+
+  <div class="row field">
+    <div class="col-md-10">
+      DATABASE KNOWLEDGE
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :db, :class =>'todd' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :debugging %>
-    <%= f.number_field :debugging %>
+
+  <div class="row field">
+    <div class="col-md-10">
+      DEBUGGING
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :debugging, :class =>'todd' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :problemsolving %>
-    <%= f.number_field :problemsolving %>
+
+  <div class="row field">
+    <div class="col-md-10">
+      PROBLEM SOLVING SKILLS
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :problemsolving, :class =>'todd' %>
+   </div>
+ </div>
+
+  <div class="row field">
+    <div class="col-md-10">
+JAVASCRIPT
+</div>
+    <div class="col-md-2">
+      <%= f.number_field :javascript, :class =>'todd' %>
   </div>
-  <div class="field">
-    <%= f.label :javascript %>
-    <%= f.number_field :javascript %>
+</div>
+
+    <div class="row field">
+      <div class="col-md-10">
+        HTML
+      </div>
+      <div class="col-md-2">
+        <%= f.number_field :HTML, :class =>'todd' %>
+      </div>
   </div>
-  <div class="field">
-    <%= f.label :HTML %>
-    <%= f.number_field :HTML %>
+
+  <div class="row field">
+    <div class="col-md-10">
+      CSS
+   </div>
+   <div class="col-md-2">
+     <%= f.number_field :CSS, :class =>'todd' %>
+   </div>
+ </div>
+
+  <div class="row field">
+    <div class="col-md-10">
+    WORKING ON A TEAM
+   </div>
+   <div class="col-md-2">
+     <%= f.number_field :team, :class =>'todd' %>
+   </div>
+ </div>
+
+
+  <div class="row field">
+    <div class="col-md-10">
+      SELF MOTIVATION
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :motivation, :class =>'todd' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :CSS %>
-    <%= f.number_field :CSS %>
+
+  <div class="row field">
+    <div class="col-md-10">
+        COMMUNICATION SKILLS
+    </div>
+    <div class="col-md-2">
+      <%= f.number_field :communication, :class =>'todd' %>
+   </div>
+ </div>
+
+  <div class="row field">
+    <div class="col-md-10">
+    YOUR OWN ENERGY LEVEL
+   </div>
+   <div class="col-md-2">
+    <%= f.number_field :energy, :class =>'todd' %>
   </div>
-  <div class="field">
-    <%= f.label :team %>
-    <%= f.number_field :team %>
+</div>
+
+  <div class="row field">
+    <div class="col-md-10">
+     INTELLIGENCE
+   </div>
+   <div class="col-md-2">
+      <%= f.number_field :intelligence, :class =>'todd' %>
   </div>
-  <div class="field">
-    <%= f.label :motivation %>
-    <%= f.number_field :motivation %>
-  </div>
-  <div class="field">
-    <%= f.label :communication %>
-    <%= f.number_field :communication %>
-  </div>
-  <div class="field">
-    <%= f.label :energy %>
-    <%= f.number_field :energy %>
-  </div>
-  <div class="field">
-    <%= f.label :intelligence %>
-    <%= f.number_field :intelligence %>
-  </div>
+</div>
+
   <div class="actions">
-    <%= f.submit "Submit My Application" %>
+    <%= f.submit "Submit" %>
   </div>
 <% end %>
+</div>

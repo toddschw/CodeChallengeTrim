@@ -4,30 +4,54 @@
 
 
 body {
-  background-color: #114B5F;
+  background-color: #114B5F !important;
 }
 ::-webkit-input-placeholder{
-  color: red !important;
+  color: #2D9099;
+  font-family: 'Museo Sans', 'Raleway', sans-serif;
+  letter-spacing: .3em;
 }
 form {
-  width: 50%;
+  width: 50vw;
   color: #E4FDE1;
-  margin 0;
+  margin: 0 auto;
   background-color: #456990;
-  text-align:center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
+  // text-align:center;
+  padding: 10vh 5vw;
+  letter-spacing: .3em;
+}
+.tim_main {
+  text-align: center;
 }
 
 input {
   background-color: #E4FDE1;
-  color: #2D9099;
+  color: red;
   padding: 5px 0 5px 15px;
-  line-height: 28px;
+  // line-height: 28px;
   font-size: 14px;
-  width: 350px;
+  // height: 3em;
+  width: 100%;
   border:none;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+.field{
+  text-align: left;
+  margin: 5vh auto !important;
+}
+.todd {
+  background-color: #E4FDE1;
+  color: orange;
+  // padding: 5px 0 5px 15px;
+  // line-height: 28px;
+  font-size: 14px;
+  // height: 3em;
+  width: 4vw;
+  border:none;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+
 }
 
 .actions > input {
