@@ -1,3 +1,4 @@
+<div class="container">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -12,78 +13,75 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :fullname %><br>
-    <%= f.text_field :fullname %>
+    <%= f.text_field :fullname, :value => 'FULL NAME' %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :VALUE => 'EMAIL' %>
   </div>
   <div class="field">
-    <%= f.label :repoURL %><br>
-    <%= f.text_field :repoURL %>
+    <%= f.text_field :repoURL, :VALUE => 'PROJECT REPO' %>
   </div>
   <div class="field">
-    <%= f.label :projectURL %><br>
-    <%= f.text_field :projectURL %>
+    <%= f.text_field :projectURL, :VALUE => 'PROJECT URL' %>
   </div>
   <div class="field">
-    <%= f.label :OOP %><br>
+    <%= f.label :OOP %>
     <%= f.number_field :OOP %>
   </div>
   <div class="field">
-    <%= f.label :modular %><br>
+    <%= f.label :modular %>
     <%= f.number_field :modular %>
   </div>
   <div class="field">
-    <%= f.label :stack %><br>
+    <%= f.label :stack %>
     <%= f.number_field :stack %>
   </div>
   <div class="field">
-    <%= f.label :db %><br>
+    <%= f.label :db %>
     <%= f.number_field :db %>
   </div>
   <div class="field">
-    <%= f.label :debugging %><br>
+    <%= f.label :debugging %>
     <%= f.number_field :debugging %>
   </div>
   <div class="field">
-    <%= f.label :problemsolving %><br>
+    <%= f.label :problemsolving %>
     <%= f.number_field :problemsolving %>
   </div>
   <div class="field">
-    <%= f.label :javascript %><br>
+    <%= f.label :javascript %>
     <%= f.number_field :javascript %>
   </div>
   <div class="field">
-    <%= f.label :HTML %><br>
+    <%= f.label :HTML %>
     <%= f.number_field :HTML %>
   </div>
   <div class="field">
-    <%= f.label :CSS %><br>
+    <%= f.label :CSS %>
     <%= f.number_field :CSS %>
   </div>
   <div class="field">
-    <%= f.label :team %><br>
+    <%= f.label :team %>
     <%= f.number_field :team %>
   </div>
   <div class="field">
-    <%= f.label :motivation %><br>
+    <%= f.label :motivation %>
     <%= f.number_field :motivation %>
   </div>
   <div class="field">
-    <%= f.label :communication %><br>
+    <%= f.label :communication %>
     <%= f.number_field :communication %>
   </div>
   <div class="field">
-    <%= f.label :energy %><br>
+    <%= f.label :energy %>
     <%= f.number_field :energy %>
   </div>
   <div class="field">
-    <%= f.label :intelligence %><br>
+    <%= f.label :intelligence %>
     <%= f.number_field :intelligence %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit My Application" %>
   </div>
 <% end %>
+</div>
