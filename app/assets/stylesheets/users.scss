@@ -1,3 +1,37 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background-color: #114B5F;
+}
+::-webkit-input-placeholder{
+  color: red !important;
+}
+form {
+  width: 50%;
+  color: #E4FDE1;
+  margin 0;
+  background-color: #456990;
+  text-align:center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+input {
+  background-color: #E4FDE1;
+  color: #2D9099;
+  padding: 5px 0 5px 15px;
+  line-height: 28px;
+  font-size: 14px;
+  width: 350px;
+  border:none;
+}
+
+.actions > input {
+  background-color:#F45B69;
+  color:#E4FDE1;
+  border:none;
+}

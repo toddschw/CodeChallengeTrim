@@ -1,4 +1,3 @@
-<div class="container">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -13,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.text_field :fullname, :value => 'FULL NAME' %>
+    <%= f.text_field :fullname, :placeholder => 'FULL NAME', :class => 'placeholder' %>
   </div>
   <div class="field">
     <%= f.text_field :email, :VALUE => 'EMAIL' %>
@@ -84,4 +83,3 @@
     <%= f.submit "Submit My Application" %>
   </div>
 <% end %>
-</div>
